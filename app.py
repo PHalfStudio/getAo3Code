@@ -2,7 +2,6 @@ from flask import Flask, request
 from module.code import get_key
 
 app = Flask(__name__)
-app.json.ensure_ascii = False
 
 
 @app.route('/ao3web/authentication', methods=['POST'])
